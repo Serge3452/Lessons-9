@@ -8,9 +8,8 @@ btn.onclick=function () {
 //
 let btn1 = document.querySelector(".btn1");
 btn1.onclick=function () {
-    for (let i = 2; i <= a.length; i++) {
-        document.querySelector(".next2").innerHTML = a.length ;
-        if (i % 2 == 0) {
+    for (let i = 0; i <= a.length; i++) {
+        if (a[i] % 2 == 0) {
             document.querySelector(".next2").innerHTML = a[i]  ;
         }
       }
