@@ -1,6 +1,6 @@
   // Домашнее задание 9
 
- // Задание 1 
+//Задание 1 
 let a = [1,2,3,4,5,6,7,8,9];
 let btn = document.querySelector(".btn");
 btn.onclick=function () {
@@ -23,15 +23,32 @@ btn1.onclick=function () {
 let btn2 = document.querySelector(".btn2");
 let d = " ";
 btn2.onclick=function () {
-    for (let i = 0; i <= a.length; i++) {
-        if (a[i] % 2 != 0) {
-          d += a[i]+ " ";
+    for (let u = 0; u <= a.length; u++) {
+        if (a[u] % 2 != 0) {
+          d += a[u]+ " ";
             document.querySelector(".next3").innerHTML = d ;
         }
       }
     }
  
+// Задание 4
+let btn3 = document.querySelector(".btn3");
+let c = [[1,2,3], 
+        [4,5,6],
+        [7,8,9],
+      ]
+let k = " ";
 
+btn3.onclick=function () {
+  for (let i = c.length-1; i>=0; i--){
+    for (let r=c[i].length-1;r>=0;r--)
+   k +=c[i][r];
+  }
+    
+  document.querySelector(".next4").innerHTML = k ;
+        }
+ 
+ 
 
 
 
