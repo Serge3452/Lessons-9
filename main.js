@@ -1,20 +1,36 @@
   // Домашнее задание 9
-let a = [1,2,3,4,5,6,7,8,9,0];
+
+ // Задание 1 
+let a = [1,2,3,4,5,6,7,8,9];
 let btn = document.querySelector(".btn");
 btn.onclick=function () {
     document.querySelector(".next").innerHTML = a[5] ;
 
 }
-//
+// Задание 2
 let btn1 = document.querySelector(".btn1");
+let b = " ";
 btn1.onclick=function () {
     for (let i = 0; i <= a.length; i++) {
         if (a[i] % 2 == 0) {
-            document.querySelector(".next2").innerHTML = a[i]  ;
+          b+= a[i]+ " ";
+            document.querySelector(".next2").innerHTML = b ;
         }
       }
     }
- //   document.querySelector(".next2").innerHTML = a[5] ;
+ 
+// Задание 3
+let btn2 = document.querySelector(".btn2");
+let d = " ";
+btn2.onclick=function () {
+    for (let i = 0; i <= a.length; i++) {
+        if (a[i] % 2 != 0) {
+          d += a[i]+ " ";
+            document.querySelector(".next3").innerHTML = d ;
+        }
+      }
+    }
+ 
 
 
 
